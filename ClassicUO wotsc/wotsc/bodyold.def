@@ -1,0 +1,485 @@
+# ** body.def **
+# Faerun's Legends
+# Format is: <ORIG BODY> {<NEW BODY>} <NEW HUE>
+
+# Animazioni buggate
+32 {400} 0
+95 {400} 0
+105 {400} 0
+156 {400} 0
+196 {400} 0
+197 {400} 0
+198 {400} 0
+199 {400} 0
+
+# Cuoio borchiato
+522 {543} 743
+524 {545} 743
+
+# Capelli
+707 {702} 0
+708 {700} 0
+709 {701} 0
+711 {701} 0
+712 {700} 0
+713 {710} 0
+716 {701} 0
+717 {701} 0
+719 {701} 0
+720 {702} 0
+798 {702} 0
+# Capelli nuovi
+#capelli spettinati
+691 {710} 0
+#capelli ordinati
+692 {710} 0
+#capelli sbarazzini
+693 {710} 0
+#frisee
+661 {710} 0
+#capelli selvaggi
+662 {710} 0
+#boccoli
+673 {710} 0
+#capelli semplici
+674 {710} 0
+#capelli coda bassa
+675 {702} 0
+#capelli laterali
+676 {710} 0 
+#capelli rasta
+1359 {701} 0
+#capelli legati
+760 {702} 0
+#capelli medi onde
+761 {701} 0
+#capelli morbidi
+762 {701} 0
+#capelli lunghissimi
+1288 {701} 0
+#cap. frangia dietro
+429 {701} 0
+
+# Lama
+1122 {959} 0
+
+# Faretra e fodero
+485 {490} 49
+486 {887} 47
+
+# Armatura di piastre
+584 {528} 1001
+585 {530} 1001
+586 {529} 1001
+587 {527} 1001
+
+# Armatura completa
+589 {563} 1000
+590 {528} 1000
+591 {530} 1000
+592 {529} 1000
+593 {527} 1000
+594 {564} 1000
+603 {527} 1000
+604 {563} 1000
+
+# Mezza armatura
+595 {564} 2787
+596 {528} 2787
+597 {530} 2787
+598 {529} 2787
+599 {527} 2787
+
+# Armatura di scaglie
+600 {550} 2941
+601 {549} 2941
+602 {548} 2941
+
+# Scudo a torre
+1287 {582} 0
+
+# Elmo alato
+609 {928} 0
+
+# Tunica arcere
+652 {542} 557
+
+# Armatura drago femminile
+663 {922} 2747
+664 {562} 2643
+
+# Armatura corallo
+1280 {560} 2985
+1281 {521} 2985
+1282 {523} 2985
+1283 {543} 2985
+
+# Armatura completa femminile
+843 {528} 0
+844 {529} 0
+845 {530} 0
+847 {527} 0
+
+# Elmo cornuto
+1284 {564} 0
+
+# Elmo corona
+1285 {565} 0
+
+# Giaco di maglia
+1286 {538} 0
+
+# Armatura cuoio nero
+438 {922} 2822
+440 {556} 2822
+441 {418} 2822
+
+# Corazza di bande
+855 {563} 0
+856 {527} 0
+857 {528} 0
+858 {529} 0
+
+# Vestiti
+721 {468} 997
+722 {499} 997
+#723 {558} 2787
+723 {469} 2645
+724 {499} 2645
+725 {468} 774
+726 {499} 774
+727 {448} 2101
+728 {909} 1001  #vestitodecorato
+729 {448} 2596
+730 {742} 740
+731 {742} 740
+732 {733} 739
+#733 {971} 739
+735 {435} 761
+736 {431} 2787
+737 {477} 2747
+738 {468} 37
+739 {469} 0
+740 {469} 1744
+741 {545} 2617
+742 {913} 2101
+743 {411} 2645
+#744 {518} 2787
+744 {971} 1001
+745 {418} 2630
+#746 {815} 2775
+746 {431} 2645
+748 {477} 2520
+749 {499} 1001
+#705 {568} 1507
+1298 {499} 0
+759 {469} 1001
+
+452 {469} 0
+453 {909} 2851
+454 {480} 2851
+
+852 {477} 0
+853 {908} 0
+854 {909} 1000
+829 {455} 0
+
+851 {926} 2705
+832 {469} 0
+830 {447} 0
+831 {988} 2705
+
+437 {449} 2848 #gonna decorata
+439 {909} 0
+
+432 {431} 0
+436 {434} 0
+475 {476} 0
+
+#corpetto
+#913 {978} 2928
+
+790 {469} 0
+
+421 {431} 0
+
+859 {563} 0
+860 {973} 0
+861 {562} 0
+
+862 {863} 2117
+#863 {469} 1000
+864 {469} 0
+865 {469} 1000
+451 {469} 0
+#867 {909} 0
+
+428 {448} 1000
+
+462 {521} 0
+463 {521} 0
+
+990 {905} 0
+991 {905} 0
+994 {905} 0
+
+515 {564} 0
+
+# Armi sinistre
+1100 {433} 0
+1101 {433} 0
+1102 {433} 0
+1103 {433} 0
+1104 {433} 0
+1105 {433} 0
+1106 {433} 0
+1107 {433} 0
+1108 {433} 0
+1109 {433} 0
+1110 {433} 0
+1111 {433} 0
+1112 {433} 0
+1113 {433} 0
+1114 {433} 0
+1115 {433} 0
+1116 {433} 0
+1117 {433} 0
+1118 {433} 0
+1119 {433} 0
+1120 {433} 0
+1121 {433} 0
+1123 {433} 0
+
+# Scopa
+1127 {648} 0
+
+# Scudo di scaglie
+420 {697} 2837
+
+1127 {648} 0
+
+422 {447} 0
+470 {447} 998
+491 {435} 1000
+506 {434} 998
+512 {435} 1000
+516 {469} 999
+517 {469} 0
+525 {477} 0
+546 {408} 0
+566 {404} 0
+747 {468} 2649
+804 {430} 0
+805 {431} 2110	#pantaloni seta
+806 {987} 0
+807 {987} 0
+808 {468} 2865
+870 {971} 2596
+880 {477} 2622
+886 {556} 2596
+897 {925} 2622
+944 {909} 0
+974 {431} 2650
+986 {477} 2650
+493 {556} 2650
+494 {545} 1001
+495 {556} 1001
+496 {418} 1001
+497 {431} 0
+498 {477} 1001
+507 {477} 2928
+508 {909} 1000
+509 {434} 2822
+510 {909} 0
+##511 {468} 2985
+531 {490} 2985
+588 {542} 2985
+610 {543} 2985
+632 {544} 2985
+
+647 {710} 0
+650 {701} 0
+654 {701} 0
+655 {905} 0
+656 {905} 0
+657 {905} 0
+658 {905} 0
+659 {905} 0
+1289 {905} 0
+
+1188 {618} 0
+1189 {618} 0
+1190 {433} 0
+1191 {618} 0
+
+1192 {617} 0
+1193 {628} 2952
+1194 {621} 2947
+1195 {648} 2952
+1196 {626} 2948
+1197 {648} 2596
+1198 {648} 1940
+1199 {648} 2871
+1200 {626} 0
+
+1201 {643} 0
+1202 {519} 0
+1203 {935} 0
+1204 {940} 0
+1205 {618} 0
+1206 {618} 0
+1207 {638} 0
+1208 {618} 0
+1209 {618} 0
+1210 {643} 0
+1211 {467} 0
+1212 {940} 0
+1213 {467} 0
+1214 {618} 0
+1215 {623} 0
+1216 {622} 0
+1217 {623} 0
+1218 {940} 0
+
+#Frusta
+1089 {536} 0
+
+# Aggiunte armi 30/09/07
+937 {935} 0 #bastoneduelame
+1043 {433} 0
+1092 {640} 0
+1093 {640} 0
+1128 {433} 0
+1129 {651} 0
+1130 {651} 0
+1131 {536} 0
+1132 {536} 0
+1133 {641} 0
+1134 {953} 0
+1135 {433} 0
+1136 {935} 0 
+1137 {536} 0
+1138 {433} 0
+1139 {622} 0
+1140 {433} 0
+1141 {641} 0
+1142 {653} 0
+1143 {952} 0
+1144 {433} 0
+1145 {620} 0
+1146 {433} 0
+1148 {646} 0
+1149 {433} 0
+1150 {625} 0
+1151 {433} 0
+1152 {631} 0
+1153 {631} 0
+1154 {433} 0
+1155 {631} 0
+1156 {433} 0
+
+
+#Aggiunte Modifiche Vestiti
+519 {400} 0
+572 {479} 0	#laccetti
+553 {913} 912	#mezza tunica
+426	{435} 0 #maglia fasciata
+447	{469} 0 
+448	{909} 0 #vestito buona fattura
+1319	{1800} 2952 #pareo calishita
+518 {449} 912 #gonna seta
+838 {447} 0 #veste fluente
+911 {434} 912 #corpetto trapuntato
+837 {448} 2119 #veste logora
+568 {448} 0 #smanicato aperto
+996 {449} 0 #gonna a doppio velo
+#427 {435} 0 #camicia giullare
+910 {908} 0 #maglia elfica
+
+#compatibilit'a
+1032 {734} 0 # Fodero spada
+#734 {734} 0 #Fodero Secondario # default
+1300 {706} 0 #turbante
+1301 {419} 0 #velo desertico
+# 839 {469} 0 #tunica calishita #default
+1303 {417} 0 #copricapo sciamanico
+1304 {511} 0 #mantello di pelliccia
+#678 {678} 0 #giacca lunga #default
+#670 {670} 0 #poncho di lana #default
+1307 {740} 0 #scialle corto
+1308 {741} 0 #busto cinghiato
+1309 {434} 0 #maglia spallina singola
+1332 {404} 0 #cappello a cilindro con teschietto 
+1326 {412} 0 #Cappello da capitano 
+1338 {706} 0 #turbante semplice 
+#706 {419} 0 #cappello da cuoco 
+1346 {404} 0 #cappello da cacciatore di streghe
+1385 {405} 0 #fedora
+1386 {407} 0 #cappello basso da mago         
+1387 {411} 0 #Cappello pomposo con piuma
+1389 {419} 0 #velo semplice
+1313 {830} 0 #Abito da festa con spalle scoperte
+1316 {910} 0 #toga lunga
+1318 {830} 0 #toga lunga singola spalla
+1365 {447} 0 #abito quitidiano da dama
+1369 {909} 0 # Tunichetta con ricami
+1370 {469} 0 #Tunica con spacco frontale
+1371 {910} 999 #Soprabito con lacci laterali
+1377 {899} 1150 #tunica con lacci
+1378 {469} 0 #impermeabile in cuoio
+1379 {469} 0 #Tunica sacerdotale con bordini
+1380 {910} 999 #soprabito con maniche corte
+1381 {867} 0 #giacca elegante
+1382 {447} 0 #abito finemente decorato
+1383 {909} 0 #abito da lavoro
+1388 {867} 0 #giacca da marinaio
+1310 {508} 0 #tonaca corta
+1315 {910} 0 #toga corta (equipconv)
+1317 {453} 0 #toga corta singola spalla
+1311 {867} 0 #giacca con colletto
+1320 {434} 0 #Corpetto di fasce 
+1321 {435} 0 # Camicia a maniche corte con cravatta
+1322 {435} 0 # Camicia a maniche lunghe con cravatta
+1329 {978} 1150 # Canotta semplice con bottoni
+1324 {907} 0 #camicia attillata
+1337 {909} 0 #veste povera
+1342 {491} 0 #camicia attillata a maniche corte (equipconv)
+1344 {909} 0 #veste umile equipconv
+1347 {567} 0 #corsetto
+1349 {978} 1150 #canotta scollata
+1350 {913} 999 #busto con lacci
+1351 {913} 999 #busto semplice
+1355 {435} 0 #camicia con scollo a v
+#668 {435} 0 #Camicia a spalle nude #default
+1360 {435} 0 #maglia scollata con lacci
+1364 {913} 999 #busto formale con lacci
+1368 {435} 0 #Camicia con coprispalla di cuoio
+1375 {968} 999 #camicia smanicata
+1384 {435} 0 #camicia con merletti
+1392 {968} 1150 #canotta leggera
+1393 {742} 0 #bustino comodo
+#1325 {660} 0 #scialle
+1340 {873} 0 #fasciature per le mani
+1357 {567} 0 #Cintura di pelle con lembo pendente
+1376 {465} 0 #Grembiule con tasche
+1335 {468} 0 #coprispalle pendente
+1345 {468} 0 #mantella lunga
+1374 {468} 0 #mantello con pelliccia
+1330 {431} 0 #pantaloni con bretelle
+1361 {430} 0 #pantaloni corti aderenti
+1362 {431} 0 #Pantaloni lunghi aderenti
+1390 {430} 0 #pantaloni elastici corti
+1391 {431} 0 #pantaloni elastici lunghi
+1314 {449} 0 #Gonna semplice
+1336 {449} 0 #Gonna con fascia e bottoni
+1341 {666} 0 #gonna al ginocchio
+1356 {666} 0 #gonna con spacco alto
+1358 {971} 0 #gonna da girovaghi
+1366 {449} 0 #gonna con fascia di cuoio
+1343 {968} 2018 #Busto di pelle aperto
+1348 {968} 2018 #tunichetta smanicata di pelle
+1363 {468} 2017 #mantella elegante di cuoio
+1323 {480} 0 #scarpe eleganti
+1367 {480} 0 #scarponcini formali
+1372 {651} 0 #pistola
+1373 {617} 0 #Archibugio

@@ -1,0 +1,1245 @@
+# ** mobtypes.txt **
+# Faerun's Legends
+# ID	TYPE	FLAGS
+1	MONSTER	0
+2	MONSTER	0
+3	MONSTER	0
+4	MONSTER	1008
+5	ANIMAL	2A
+6	ANIMAL	28
+7	MONSTER	0
+8	MONSTER	1900
+9	MONSTER	1008
+10	MONSTER	1008
+11	MONSTER	0
+12	MONSTER	1009
+13	MONSTER	1004
+14	MONSTER	1000
+15	MONSTER	1004
+16	MONSTER	1004
+17	MONSTER	0
+18	MONSTER	0
+19	MONSTER	0
+20	MONSTER	0
+21	MONSTER	0
+22	MONSTER	A00
+23	ANIMAL	20
+24	MONSTER	1000
+25	ANIMAL	20
+26	MONSTER	0
+27	ANIMAL	20
+28	MONSTER	0
+29	ANIMAL	1020
+30	MONSTER	8
+31	MONSTER	0
+33	MONSTER	0
+34	MONSTER	0
+35	MONSTER	0
+36	MONSTER	0
+37	ANIMAL	20
+38	MONSTER	8
+39	MONSTER	8
+40	MONSTER	8
+41	MONSTER	0
+42	MONSTER	0
+43	MONSTER	8
+44	MONSTER	0
+45	MONSTER	0
+46	MONSTER	1
+47	MONSTER	800
+48	MONSTER	0
+49	MONSTER	9
+50	MONSTER	0
+51	MONSTER	0
+52	ANIMAL	20
+53	MONSTER	0
+54	MONSTER	0
+55	MONSTER	0
+56	MONSTER	0
+57	MONSTER	0
+58	MONSTER	0
+59	MONSTER	1009
+60	MONSTER	1009
+61	MONSTER	1009
+62	MONSTER	9
+63	MONSTER	0
+64	ANIMAL	20
+65	ANIMAL	20
+66	MONSTER	0
+67	MONSTER	8
+68	MONSTER	0
+69	MONSTER	0
+70	MONSTER	0
+71	MONSTER	0
+72	MONSTER	1000
+73	MONSTER	0
+74	MONSTER	0
+75	MONSTER	0
+76	MONSTER	0
+77	MONSTER	0
+78	MONSTER	0
+79	MONSTER	0
+80	MONSTER	0
+81	ANIMAL	20
+82	MONSTER	0
+83	MONSTER	0
+84	MONSTER	0
+85	MONSTER	1000
+86	MONSTER	0
+87	MONSTER	0
+88	MONSTER	0
+89	MONSTER	0
+90	MONSTER	0
+91	MONSTER	0
+92	MONSTER	0
+93	MONSTER	0
+94	MONSTER	0
+96	MONSTER	0
+97	ANIMAL	20
+98	ANIMAL	20
+99	ANIMAL	20
+100	MONSTER	0
+101	MONSTER	0
+102	MONSTER	8
+103	MONSTER	1
+104	MONSTER	9
+106	MONSTER	9
+107	MONSTER	0
+108	MONSTER	0
+109	MONSTER	0
+110	MONSTER	0
+111	MONSTER	0
+112	MONSTER	0
+113	MONSTER	0
+114	MONSTER	0
+115	MONSTER	0
+116	MONSTER	0
+117	MONSTER	0
+118	MONSTER	0
+119	MONSTER	0
+120	MONSTER	0
+121	MONSTER	0
+122	ANIMAL	0
+123	MONSTER	0
+124	MONSTER	0
+125	MONSTER	0
+126	MONSTER	0
+127	ANIMAL	20
+128	MONSTER	0
+129	animal 0
+130	MONSTER	8
+131	MONSTER	0
+132	ANIMAL	0
+133	ANIMAL	20
+134	ANIMAL	20
+135	MONSTER	0
+136	MONSTER	0
+137	MONSTER	0
+138	MONSTER	0
+139	MONSTER	0
+140	MONSTER	0
+141	MONSTER	0
+142	MONSTER	0
+143	MONSTER	0
+144	SEA_MONSTER	0
+145	SEA_MONSTER	0
+146	MONSTER	0
+147	MONSTER	0
+148	MONSTER	0
+149	MONSTER	0
+150	SEA_MONSTER	0
+151	SEA_MONSTER	0
+152	MONSTER	0
+153	MONSTER	0
+154	MONSTER	0
+155	MONSTER	0
+157	MONSTER	0
+158	MONSTER	4
+159	MONSTER	4
+160	MONSTER	4
+161	MONSTER	0
+162	MONSTER	0
+163	MONSTER	0
+164	MONSTER	0
+165	MONSTER	0
+166	MONSTER	0
+167	MONSTER	0
+168	MONSTER	0
+169	ANIMAL	4000
+170	MONSTER	0
+171	MONSTER	0
+172	MONSTER	0
+173	MONSTER	0
+174	MONSTER	0
+175	MONSTER	0
+176	MONSTER	0
+177	MONSTER	0
+178	MONSTER	0
+179	MONSTER	0
+180	MONSTER	0
+181	MONSTER	0
+182	MONSTER	0
+183	MONSTER	0
+184	MONSTER	0
+185	MONSTER	0
+186	MONSTER	0
+187	ANIMAL	4000
+188	ANIMAL	4000
+189	MONSTER	0
+190	MONSTER	0
+191	MONSTER	0
+192	MONSTER	0
+193	MONSTER	0
+194	MONSTER	0
+195	MONSTER	0
+196	MONSTER	0
+199	MONSTER	0
+200	ANIMAL	0
+201	ANIMAL	0
+202	ANIMAL	0
+203	ANIMAL	0
+204	ANIMAL	0
+205	ANIMAL	0
+206	MONSTER	40
+207	ANIMAL	0
+208	ANIMAL	0
+209	ANIMAL	0
+210	ANIMAL	0
+211	ANIMAL	0
+212	ANIMAL	0
+213	ANIMAL	0
+214	ANIMAL	0
+215	MONSTER	40
+216	ANIMAL	0
+217	ANIMAL	0
+218	ANIMAL	0
+219	ANIMAL	0
+220	ANIMAL	0
+221	ANIMAL	0
+222	ANIMAL	0
+223	ANIMAL	0
+224	ANIMAL	0
+225	ANIMAL	0
+226	ANIMAL	0
+227	ANIMAL	0
+228	ANIMAL	0
+229	ANIMAL	0
+230     ANIMAL  4000
+231	ANIMAL	0
+232	ANIMAL	0
+233	ANIMAL	0
+234	ANIMAL	0
+235	ANIMAL	0
+236	ANIMAL	0
+237	ANIMAL	0
+238	ANIMAL	0
+239	ANIMAL	0
+240	MONSTER	0
+241	MONSTER	0
+242	MONSTER	0
+243	ANIMAL	4000
+244	MONSTER	0
+245	MONSTER	0
+246	ANIMAL	0
+247	MONSTER	0
+248	ANIMAL	0
+249	MONSTER	0
+250	MONSTER	0
+251	MONSTER	0
+252	MONSTER	0
+253	MONSTER	0
+254	ANIMAL	0
+255	MONSTER	0
+256	MONSTER		0 #	Chief Paroxysmus
+257	MONSTER		0 #	Dread Horn
+258	MONSTER		0 #	Lady M
+259	MONSTER		0 #	Monstrous Interred Grizzle
+260	MONSTER		0 #	Travesty
+261	MONSTER		0 #	Shimmering Effusion
+262	MONSTER		0 #	Tormented Minotaur
+263	MONSTER		0 #	Minotaur
+264	MONSTER		0 #	Changeling
+265	MONSTER		0 #	Hydra
+266	MONSTER		0 #	Dryad
+267	MONSTER		0 #	Troglodyte
+268	ANIMAL 	0
+269	MONSTER		0 #	Thorn bat
+270	MONSTER		0 #	Bulbous Putrification
+271	MONSTER		0 #	Satyr
+272	MONSTER		0 #	Interred Grizzle
+273	MONSTER		0 #	Fetid Essence
+274     MONSTER		0
+275     MONSTER		0
+276	ANIMAL		0 #	Chimera
+277	ANIMAL		0 #	Cu Sidhe
+278	ANIMAL		0 #	Squirrel
+279	ANIMAL		0 #	Ferret
+280	MONSTER		0 #	Plate Armored Minotaur
+281	MONSTER		0 #	Leather Armored Minotaur
+281	EQUIPMENT	0
+282	ANIMAL		0 #	Parrot
+283	ANIMAL		0 #	Crow
+283	EQUIPMENT	0
+284	ANIMAL		0 #	Mondains Steed
+285	MONSTER		0 #	Reaper Form
+286     ANIMAL	0
+287     ANIMAL	0
+288     ANIMAL	0
+289     ANIMAL	0
+290	ANIMAL	0
+291	ANIMAL	0
+292	ANIMAL	0
+293	ANIMAL	0
+294	ANIMAL	0
+295	ANIMAL	0
+296	ANIMAL	0
+297	ANIMAL	0
+298	ANIMAL	0
+299	ANIMAL	0
+300	MONSTER	0
+301	MONSTER	0
+302	MONSTER	0
+303	MONSTER	0
+304	MONSTER	0
+305	MONSTER	0
+306	MONSTER	0
+307	MONSTER	0
+308	MONSTER	0
+309	MONSTER	0
+310	MONSTER	0
+311	MONSTER	0
+312	MONSTER	0
+313	MONSTER	0
+314	MONSTER	0
+315	MONSTER	0
+316	MONSTER	0
+317	MONSTER	8
+318	MONSTER	0
+319	MONSTER	0
+320	ANIMAL	0
+321	ANIMAL	0
+322	ANIMAL	0
+323	ANIMAL	0
+324     MONSTER 0
+325     MONSTER 0
+326     MONSTER 0
+327     MONSTER 0
+328     MONSTER 0 # scheletro cavaliere
+329     MONSTER 0 # abishai
+330     MONSTER 0 # scheletro mago
+331     MONSTER 0 # scheletro guerriero
+332     MONSTER 0 # Dragoterrestre
+333     MONSTER 0
+334     MONSTER 0
+335     MONSTER 0
+336     MONSTER 0
+337     MONSTER 0
+338     MONSTER 0
+339     MONSTER 0
+340     MONSTER 0
+341     MONSTER 0
+342     MONSTER 0
+343     MONSTER 0
+344     MONSTER 0
+345     MONSTER 0
+346     MONSTER 0
+347     MONSTER 0
+348     MONSTER 0
+349	EQUIPMENT	0
+350     MONSTER 0
+351     MONSTER 0
+352     MONSTER 0
+353     MONSTER 0
+354     MONSTER 0
+355     ANIMAL	0
+356     ANIMAL	0
+357     ANIMAL	0
+358     ANIMAL	0
+359     ANIMAL	0
+360     ANIMAL	0
+361     ANIMAL	0
+362     ANIMAL	0
+363     ANIMAL	0
+364     ANIMAL	0
+365     MONSTER 0
+366     MONSTER 0
+367     MONSTER 0 # drago piccolo
+368     MONSTER 0 # liana carnivora
+369     MONSTER 0 #ragno enorme
+370     MONSTER 0 #pianta carnivora bocca
+371     MONSTER 0 # pianta fiore mostro
+372     MONSTER 0 # fauce gorgogliante
+373     MONSTER 0 # scimmia
+374     MONSTER 0 # bacarozzo piccolo
+375     MONSTER 0 # mostro pianta
+376     MONSTER 0 # naga piccola
+377     MONSTER 0 # idra
+378     MONSTER 0 # naga grande
+379     MONSTER 0 # atach
+380     MONSTER 0 # Banshee
+381     MONSTER 0 # zombie grande
+382     MONSTER 0 # coccodrillo/lucertola
+383     MONSTER 0 # lucertola cornuta
+384     MONSTER 0 # tanarrukk
+385     MONSTER 0 # efreet
+386     MONSTER 0 # gibberling (wotsc exclusive)
+387     MONSTER 0 # coboldo spada (wotsc exclusive)
+388     MONSTER 0 # coboldo arco (wotsc exclusive)
+389     MONSTER 0 # otyugh (wotsc exclusive)
+390     MONSTER 0 # abishai -mmh- (wotsc exclusive)
+391     MONSTER 0 # hobgoblin spada (wotsc exclusive)
+392     MONSTER 0 # ettercap (wotsc exclusive)
+393     MONSTER 0 # bugbearcapo (wotsc exclusive)
+394     MONSTER 0 # hobgoblin arco (wotsc exclusive)
+395     MONSTER 0 # Calamaro gigante
+396     MONSTER 0 #Sciamano goblin (wotsc exclusive)
+397     MONSTER 0 # medusa gigante
+398     MONSTER 0 # gnoll bardica (wotsc exclusive)
+399     MONSTER 0 # gnoll spada (wotsc exclusive)
+400	HUMAN	0
+401	HUMAN	0
+402	HUMAN	0
+403	HUMAN	0  #maschera da danza id507 (non impl. Potenzialmente male, no anim)
+404	EQUIPMENT	0  #cappello da pescatore 5907
+405	EQUIPMENT	0  #cappello schiacciato 5908
+406	EQUIPMENT	0  #cappellino 5909
+407	EQUIPMENT	0  #cappello da contadino alto 5910
+408	EQUIPMENT	0  #cappello da contadino 5911
+409	EQUIPMENT	0  #cappello da mago 5912
+410	EQUIPMENT	0  # BAsco 5913
+411	EQUIPMENT	0  #Cappello piumato 5914
+412	EQUIPMENT	0  #Cappello a tre punte 5915
+413	EQUIPMENT	0  #Cappello da giullare 5916
+414	EQUIPMENT	0 #Maschera d'orso 5445
+415	EQUIPMENT	0 #maschera di cervo 5447
+416	EQUIPMENT	0 #Maschera d'orco id 5147
+417	EQUIPMENT	0  #Maschera tribale 5449
+418	EQUIPMENT	0  #Maschera tribale 5451
+419	EQUIPMENT	0 #Bandana id5443
+421     EQUIPMENT       0 # Pantaloni larghi id5980
+422     EQUIPMENT       0 # Abito da ballo id4263
+423	EQUIPMENT	0 #pantaloni fasciati 10129
+424	EQUIPMENT	0  #Guanti rinforzati 10130
+425	EQUIPMENT	0 #Maschera di cuoio 10126
+426	EQUIPMENT	0 #maglia fasciata 1d10131
+428	EQUIPMENT	0 #abito nobile ricamato 8434
+429	EQUIPMENT	0 #capelli frangia
+430	EQUIPMENT	0 # Pantaloni corti 5422
+431	EQUIPMENT	0 #pantaloni lunghi
+432	EQUIPMENT	0 # Pantaloni corti stretti 5428
+433	EQUIPMENT	0 #spada lunga
+434	EQUIPMENT	0 #maglia smanicata semplice 5399
+435	EQUIPMENT	0 #maglia di buona fattura id7933
+437     EQUIPMENT       0 #Gonna decorata 5401
+438	EQUIPMENT	0 # corpetto di cuoio 5195
+439     EQUIPMENT       0 # vestito da paggio5426
+440	EQUIPMENT	0 # bracciali di cuoio 5196
+441	EQUIPMENT	0 # maschera di cuoio 6197
+442	EQUIPMENT	0 #camaglio lungo 10100
+443	EQUIPMENT	0 #camaglio corto 10101
+444	EQUIPMENT	0 #leather jingasa (not impl) 10102
+445	EQUIPMENT	0 #Plate jingasa 10103
+446	EQUIPMENT	0 #elmo piatto 10113
+447	EQUIPMENT	0 #vestito semplice 7937
+448	EQUIPMENT	0 # vestito di buona fattura id7935
+449	EQUIPMENT	0 # gonna 5398
+450	EQUIPMENT	0 
+451	EQUIPMENT	0 #tunica semplice 8532
+452	EQUIPMENT	0 # Tunica elegante/veste da arcanista 5777
+453	EQUIPMENT	0 #Vestito piumato 5778
+454	EQUIPMENT	0 #Scarpe piumate 5779
+455	EQUIPMENT	0 # gonnellino 5431
+456	EQUIPMENT	0 #plate mempo 456 (maschera not impl)
+457	EQUIPMENT	0 #Armatura di cuoio orientale 10107
+458	EQUIPMENT	0 #Armatura di cuoio borchiata orientale 10108
+459	EQUIPMENT	0 #Armatura di piastre orientale 10109
+460	EQUIPMENT	0
+461	EQUIPMENT	0
+462	EQUIPMENT	0 #Corpetto armatura di cuoio id 4434
+463	EQUIPMENT	0 #Corpetto armatura di cuoio id 4433
+464	EQUIPMENT	0 
+465	EQUIPMENT	0 #Grembiule intero 5437
+466	EQUIPMENT	0 #Mezzo grembiule 5435
+467	EQUIPMENT	0
+468	EQUIPMENT	0 #mantello 5397
+469	EQUIPMENT	0 #Tunica 7939
+470	EQUIPMENT	0 #Abito da nobile id4264
+471	EQUIPMENT	0 #leather mempo (maschera)10106
+472	EQUIPMENT	0 #mezza maschera scura 10121
+473	EQUIPMENT	0 #braccia di cuoio orientale 10110
+474	EQUIPMENT	0 #braccia borchiata orientale 10111
+475	EQUIPMENT	0 #stivali alti imbottiti 6000
+476	EQUIPMENT	0 #stivali di pelle 5905
+477	EQUIPMENT	0 #stivali 5899
+478	EQUIPMENT	0 #armatura di piaste rorientale 10112
+479	EQUIPMENT	0 #sandali 5901
+480	EQUIPMENT	0 #scarpe 5903
+481	EQUIPMENT	0 
+482	EQUIPMENT	0 #fur boots bug #anim armor
+483	EQUIPMENT	0 #fur sarong bug bambina anim
+484	EQUIPMENT	0 #fur kilt bug #anim fascia
+485	EQUIPMENT	0 #fodero schiena id 3901 (item 8973-74 bug)
+486	EQUIPMENT	0 #anim faretra (id8975-8976 bug)
+487	EQUIPMENT	0 #Gambali orientali cuoio 10118
+488	EQUIPMENT	0 #armatura cuoio borchiato gambe 10119
+489	EQUIPMENT	0  #gambali piastre orientali 10121
+490	EQUIPMENT	0  #Fascia/grafica bandoliera 5441
+491	EQUIPMENT	0  #Maglia con manica lunga 4265
+492	EQUIPMENT	0  #Fascia per capelli/bandana id 5439
+493     EQUIPMENT       0  # Guanti pregiati id760 (anche bead necklace, bug 7941
+494     EQUIPMENT	0  # Guanti leggeri cuoio id509
+495     EQUIPMENT	0  # Bracciali di stoffa id510
+496     EQUIPMENT       0  # Mezza maschera id687
+497     EQUIPMENT       0  # pantaloni di lana id710
+498	EQUIPMENT	0  # stivali leggeri id548
+499	EQUIPMENT	0  # cappuccio mantello 5879
+500	EQUIPMENT	0  #lanterna
+501	EQUIPMENT	0  #torcia
+502	EQUIPMENT	0  # Candela
+503	EQUIPMENT	0  #lanterna spenta
+504	EQUIPMENT	0  #torcia spenta
+505	EQUIPMENT	0  #Candela spenta
+506	EQUIPMENT	0  # Canottiera id 4266
+507     EQUIPMENT       0  #stivali leggeri id549
+508     EQUIPMENT       0  #Corpetto lungo id774
+509     EQUIPMENT       0  #Corpetto corto id775
+510     EQUIPMENT       0  #corpetto medio-lungo id776
+511	EQUIPMENT	0  #MAntello di pelle id769
+512	EQUIPMENT	0  #Maglia a manica lunga id4267
+513	EQUIPMENT	0   #maschera di stoffa 10127
+514	EQUIPMENT	0   #fascia di cuoio 10128
+516	EQUIPMENT	0  #tunica sacerdotale 
+517	EQUIPMENT	0  #Tunica sgambata id4274
+518	EQUIPMENT	0  #gonna a righe 10138
+519	EQUIPMENT	0
+520	EQUIPMENT	0
+521	EQUIPMENT	0  #busto borchiata
+523	EQUIPMENT	0 # borchiata braccia
+524     EQUIPMENT       0 # borchiata guanti
+525	EQUIPMENT	0  #stivali
+526	EQUIPMENT	0 
+527	EQUIPMENT	0 #camicia da giullare 10206
+528	EQUIPMENT	0 #bracciali armatura
+529	EQUIPMENT	0 #gambali armatura
+530	EQUIPMENT	0 #bracciali armatura
+531	EQUIPMENT	0  # Fascia di pelle id 770
+532	EQUIPMENT	0
+533	EQUIPMENT	0
+534	EQUIPMENT	0
+535	EQUIPMENT	0
+536	EQUIPMENT	0
+537	EQUIPMENT	0
+538	EQUIPMENT	0
+539	EQUIPMENT	0 #benda occhio 10202
+540	EQUIPMENT	0
+541	EQUIPMENT	0 #ali da gargoyle 8471
+542	EQUIPMENT	0
+543	EQUIPMENT	0 # borchiata gambe
+544	EQUIPMENT	0
+545	EQUIPMENT	0
+546	EQUIPMENT	0  #Cappello da apicoltore 5934
+547	EQUIPMENT	0
+548	EQUIPMENT	0
+549	EQUIPMENT	0
+550	EQUIPMENT	0
+551	EQUIPMENT	0
+552	EQUIPMENT	0 #pantaloni a righe 10139
+553	EQUIPMENT	0 #mezza tunica 10140
+554	EQUIPMENT	0
+555	EQUIPMENT	0
+556	EQUIPMENT	0
+557	EQUIPMENT	0
+558	EQUIPMENT	0 #tunica in seta
+559	EQUIPMENT	0 #
+560	EQUIPMENT	0 #leather cap anim(bug?)
+561	EQUIPMENT	0
+562	EQUIPMENT	0
+563	EQUIPMENT	0
+564	EQUIPMENT	0
+565	EQUIPMENT	0
+566	EQUIPMENT	0  # cappello piumato (bug item 9068-9069)
+567	EQUIPMENT	0 #cintura con foglie di seta
+568	EQUIPMENT	0 #abito elegante/smanicato aperto
+569	EQUIPMENT	0 #zoccoli 10134
+570	EQUIPMENT	0
+571	EQUIPMENT	0 #maglia fasciata 10132
+572	EQUIPMENT	0 #cavigliere di stoffa 10135
+573	EQUIPMENT	0 # Bracciali ornamentali 4235
+574	MONSTER	1400
+575	EQUIPMENT	0
+576	EQUIPMENT	0
+577	EQUIPMENT	0
+578	EQUIPMENT	0
+579	EQUIPMENT	0
+580	EQUIPMENT	0
+581	EQUIPMENT	0
+582	EQUIPMENT	0
+583	EQUIPMENT	0
+584	EQUIPMENT	0
+585	EQUIPMENT	0
+586	EQUIPMENT	0
+587	EQUIPMENT	0
+588	EQUIPMENT	0 #corpetto di pelle id 771
+589	EQUIPMENT	0
+590	EQUIPMENT	0
+591	EQUIPMENT	0
+592	EQUIPMENT	0
+593	EQUIPMENT	0
+594	EQUIPMENT	0
+595	EQUIPMENT	0
+596	EQUIPMENT	0
+597	EQUIPMENT	0
+598	EQUIPMENT	0 
+599	EQUIPMENT	0 #female kimono 10190
+600	EQUIPMENT	0
+601	EQUIPMENT	0
+602	EQUIPMENT	0
+603	EQUIPMENT	0
+604	EQUIPMENT	0
+605	HUMAN		0 # elf male
+606	HUMAN		0 # elf female
+607	HUMAN		0 # elf male ghost
+608	HUMAN		0 # elf female ghost
+610     EQUIPMENT       0 # Pantaloni di pelle id772
+611	EQUIPMENT	0 
+612	EQUIPMENT	0
+613	EQUIPMENT	0
+614	EQUIPMENT	0
+615	EQUIPMENT	0
+616	EQUIPMENT	0
+617	EQUIPMENT	0
+618	EQUIPMENT	0
+619	EQUIPMENT	0
+620	EQUIPMENT	0
+621	EQUIPMENT	0
+622	EQUIPMENT	0
+623	EQUIPMENT	0
+624	EQUIPMENT	0
+625	EQUIPMENT	0
+626	EQUIPMENT	0
+627	EQUIPMENT	0
+628	EQUIPMENT	0
+629	EQUIPMENT	0
+630	EQUIPMENT	0
+631	EQUIPMENT	0
+632	EQUIPMENT	0 #Bracciali di pelle id 773
+633	EQUIPMENT	0
+635	EQUIPMENT	0
+636	EQUIPMENT	0
+637	EQUIPMENT	0
+638	EQUIPMENT	0
+639	EQUIPMENT	0
+643	EQUIPMENT	0
+644	EQUIPMENT	0
+645	EQUIPMENT	0
+646	EQUIPMENT	0
+648	EQUIPMENT	0
+649	EQUIPMENT	0
+651	EQUIPMENT	0
+652	EQUIPMENT	0 #Corpetto di pelle 5151
+653	EQUIPMENT	0
+654	EQUIPMENT	0
+655	EQUIPMENT	0
+656	EQUIPMENT	0
+657	EQUIPMENT	0
+658	EQUIPMENT	0
+659	EQUIPMENT	0
+660	EQUIPMENT	0
+661	EQUIPMENT	0 #capelli frisee
+662	EQUIPMENT	0 #capelli selvaggi
+663	EQUIPMENT	0 #Armatura drago 5150
+664	EQUIPMENT	0 #Elmo drago     5149
+665	EQUIPMENT	0 #Elmo corallo 5275 not impl
+666	EQUIPMENT	0 #Busto corallo 5276  not impl
+667	EQUIPMENT	0 #bracciali corallo 5277 not impl
+668	EQUIPMENT	0 #gambali corallo 5278 not impl
+669	EQUIPMENT	0
+670	EQUIPMENT	0
+671	EQUIPMENT	0 #giaco di maglia
+672	EQUIPMENT	0
+673	EQUIPMENT	0 #capelli boccoli #gauntlets of valor 11018 (anim bracciali)
+674	EQUIPMENT	0 #capelli semplici
+675	EQUIPMENT	0 #capelli a coda bassa
+676	EQUIPMENT	0 #capelli laterali  #(anim) tank top
+677	EQUIPMENT	0 #capelli rasta
+678	EQUIPMENT	0 #capelli lunghissimi
+679	EQUIPMENT		0 #	H_M_Dragon_Arms 9815
+679	EQUIPMENT	0
+680	EQUIPMENT		0 #	H_M_Dragon_Chest 9793
+680	EQUIPMENT	0
+681	EQUIPMENT		0 #	H_M_Dragon_Gauntlests 9795
+681	EQUIPMENT	0
+682	EQUIPMENT		0 #	H_M_Dragon_Helm 9797
+682	EQUIPMENT	0
+683	EQUIPMENT		0 #	H_N_Dragon_Legs 9799
+683	EQUIPMENT	0
+684	EQUIPMENT		0 #	H_F_Dragon_Arms #draedrica elmo 11025 not impl
+685	EQUIPMENT		0 #	H_F_Dragon_Chest #Draedrica gambe 11015 not impl
+686	EQUIPMENT		0 #	H_F_Dragon_Gauntlets #draedrica busto 11017 not iml
+687	EQUIPMENT		0 #	H_F_Dragon_Helm #draedrica braccia 10019 not impl
+687	EQUIPMENT	0
+688	EQUIPMENT		0 #	H_F_Dragon_Legs #draedrtica braccia 11021 not impl
+688	EQUIPMENT	0
+689	MONSTER			0 #	Time Lord
+690	EQUIPMENT	0 #kasa 10135
+691	EQUIPMENT	0 #Capelli spettinati
+692	EQUIPMENT	0 #capelli ordinato
+693	EQUIPMENT	0 #Capelli sbarazzini
+694	EQUIPMENT	0 
+695	EQUIPMENT	0 
+696	EQUIPMENT	0
+697	EQUIPMENT	0
+698	EQUIPMENT	0
+699	EQUIPMENT	0
+700	EQUIPMENT	0 #capelli corti
+701	EQUIPMENT	0 #capelli lunghi
+702	EQUIPMENT	0 #capelli coda di cavallo
+703	EQUIPMENT	0 #capelli cresta
+704	MONSTER			0 #	?
+705     EQUIPMENT       0  #(anim)smanicato femminile lungo    
+706     EQUIPMENT	0
+707     EQUIPMENT	0 #capelli codino
+708     EQUIPMENT	0 #capelli cortissimi
+709     EQUIPMENT	0 #capelli lunghi mossi
+710	EQUIPMENT	0 #capelli folti
+711     EQUIPMENT       0 #capelli trecce lunghi
+712	EQUIPMENT	0 #capelli a paggetto
+713	EQUIPMENT	0 # capelli afro
+715	EQUIPMENT	0 # capelli
+716	EQUIPMENT	0 # capelli lisci
+717	EQUIPMENT	0 # capelli capelli sl trecce
+719	EQUIPMENT	0 # capelli capelli s mossi
+720	EQUIPMENT	0 # capelli trecciona
+721	EQUIPMENT	0 # capelli #id mantello decorato 5850
+722	EQUIPMENT	0 # capelli #id cappuccio decorato 5851
+723	EQUIPMENT	0 # capelli #Id tunica velluto 5852
+724	EQUIPMENT	0 # capelli #Id cappuccio velluto 5853
+725	EQUIPMENT	0 # capelli #d mantello verde 5854
+726	EQUIPMENT	0 # capelli #id cappuccio verde 5855
+727	EQUIPMENT	0 # barba #Id vestito elegante 5856
+728	EQUIPMENT	0 # barba #id vestito decorato 5857
+729	EQUIPMENT	0 # barba #id vestito multivelo 5858
+730	EQUIPMENT	0 # barba #id corpetto cuoio lacci 5859
+731	EQUIPMENT	0 # barba #id corpetto cuoio 5860
+732	EQUIPMENT	0 #gonna cuoio corta 5863
+733	EQUIPMENT	0 #gonna cuoio lunga 5862
+734	EQUIPMENT	0 *Anim tunica bordini #fodero 9829
+735	EQUIPMENT	0 # camicia 5863
+736	EQUIPMENT	0 # pantaloni stretti 5864
+737	EQUIPMENT	0 #stivali eleganti 5865
+738	EQUIPMENT	0 #mantello rosso 5866
+739	EQUIPMENT	0 #abito di pizzo 5867
+740	EQUIPMENT	0 #abito ricamato 5868
+741	EQUIPMENT	0 #guanti ricamati 5869
+742	EQUIPMENT	0 # Busto 5871
+743	EQUIPMENT	0 #cappello con piuma
+744	HUMAN	0 # gonna con spacco 5872
+745	HUMAN	0 # maschera 5873
+746	MONSTER	0 # pantaloni a sbuffo 5874
+747	MONSTER	0 #mantellina cotone id506
+748	MONSTER	0  # Stivali pelosi 5875
+749	MONSTER	0 # velo 5877
+750	HUMAN	8000 #VEstito bordato 5878
+751	HUMAN	8000 # maschera e cappuccio 5879
+752	MONSTER	0
+753	MONSTER	8
+754	MONSTER	8
+755	MONSTER	8
+756	MONSTER	0
+757	MONSTER	0
+758	MONSTER	8
+759	EQUIPMENT	0  # Saio id 5898: 
+760	EQUIPMENT	0  #capelli legati # Cappello cuoio 7609
+761	EQUIPMENT	0 #capelli medi onde
+762	EQUIPMENT	0 #capelli morbidi
+763	MONSTER	0
+764	MONSTER	0
+765	MONSTER	0
+766	MONSTER	0
+767	MONSTER	0
+768	MONSTER	0
+769	MONSTER	0
+770	MONSTER	0
+771	MONSTER	0
+772	MONSTER	0
+773	MONSTER	0
+774	MONSTER	0
+775	MONSTER	0
+776	MONSTER	0
+777	MONSTER	0
+778	MONSTER	0
+779	MONSTER	0
+780	MONSTER	0
+781	MONSTER	0
+782	MONSTER	80
+783	MONSTER	0
+784	MONSTER	0
+785	MONSTER	0
+786	MONSTER	0
+787	MONSTER	0
+788	MONSTER	0
+789	MONSTER	0
+790	MONSTER	0  #Tunica elegante
+791	ANIMAL	4000
+792	MONSTER	0
+793	ANIMAL	0
+794	ANIMAL	0
+795	MONSTER	0
+796	MONSTER	0
+797	MONSTER	0
+798	MONSTER	0 #capelli treccina (attenzione)
+799	ANIMAL	0
+800	EQUIPMENT	0 #pizzetto
+801	EQUIPMENT	0 #barba lunga
+802	EQUIPMENT	0 #barba corta
+803	EQUIPMENT	0 #baffi
+804	EQUIPMENT 0  # pantaloni di lana id501 *monster*
+805	EQUIPMENT 0  # pantaloni di seta id508 *monster*
+806	MONSTER	80
+807	MONSTER	0
+808	EQUIPMENT 0  # mantello elfico id705 (bug layer) *monster*
+809	EQUIPMENT	0
+810	EQUIPMENT	0
+811	EQUIPMENT	0
+812	EQUIPMENT	0
+813	EQUIPMENT	0
+814	EQUIPMENT	0
+815	EQUIPMENT	0
+816	EQUIPMENT	0
+817	EQUIPMENT	0
+818	EQUIPMENT	0
+819	EQUIPMENT	0
+820	EQUIPMENT	0
+821	EQUIPMENT	0
+822	EQUIPMENT	0
+823	EQUIPMENT	0
+824	EQUIPMENT	0
+825	EQUIPMENT	0
+826	EQUIPMENT	0
+827	EQUIPMENT	0
+828	EQUIPMENT	0
+829     EQUIPMENT       0 #Kilt 5816
+830	EQUIPMENT	0 #abito di seta 5998
+831	EQUIPMENT	0 #corpetto lungo 5999
+832	EQUIPMENT	0 #veste ampia 5997
+833	EQUIPMENT	0
+834	EQUIPMENT	0 #amuleto tribale 11022
+835	EQUIPMENT	0 #amuleto goccie 11023
+836	EQUIPMENT	0 #abito oscuro 10137
+837	EQUIPMENT	0 #veste logora/toga id 12659
+838	EQUIPMENT	0 #tunica fluente 10212
+839	EQUIPMENT	0 #gonna calishita 10113
+840	EQUIPMENT	0 #Vestito di buona fattura2 not impl 7936
+841	EQUIPMENT	0 #VEstito semplice2 not impl 7938
+842	EQUIPMENT	0
+846	EQUIPMENT	0
+847	EQUIPMENT	0
+848	EQUIPMENT	0 #piercing facciale not impl 10269
+849	EQUIPMENT	0
+850     EQUIPMENT       0 #Giacca con coda
+851	EQUIPMENT	0 #Gonna corta 5996
+852     EQUIPMENT	0 # Stivali con lacci 5813
+853     EQUIPMENT	0 # Abito senza maniche5814
+854     EQUIPMENT	0 # Tunichetta 5815
+859     EQUIPMENT       0 #elmo alato 4466
+860     EQUIPMENT       0 #elmo chiuso alato 5466
+861     EQUIPMENT       0 #elmo Chiuso cornuto 5467
+862     EQUIPMENT       0 ##Tunica nobile/veste da arcanista 8528
+863     EQUIPMENT       0 ##Tunica rubino 8529
+864     EQUIPMENT       0 ##Tunica con rune 8530
+865     EQUIPMENT       0 ##Tunica pesante di velluto 8531
+866	EQUIPMENT		0 #	H_M_WingedHelm elmo alato 9865
+867	EQUIPMENT		0 #	H_F_WingedHelm  #Tunica aperta 8533
+868	EQUIPMENT		0 #	Female Breastplate of Justice
+869	EQUIPMENT		0 #	Helm of Spirituality #camaglio orientale 1124
+870	EQUIPMENT		0 #	gonna elfica id706
+871	EQUIPMENT		0 #	Male Breastplate of Justice
+872	EQUIPMENT		0 #	Arms of Compassion
+873	EQUIPMENT		0 #	Gauntlets of Valor
+874	EQUIPMENT		0 #	Legs of Honor
+875	EQUIPMENT		0 #	Sollerets of Sacrifice #grafica scarpe 11026
+876	EQUIPMENT		0 #	cloak of Humility #mantello pelo 11012
+877	EQUIPMENT		0 #	Book 01
+878	EQUIPMENT		0 #	Book 02 of ninjitsu 9120
+879	EQUIPMENT		0 #	Book 03 of bushido 9100
+880	EQUIPMENT		0 #	Schinieri elfici id707
+881	EQUIPMENT		0 #	Book 05
+882	EQUIPMENT		0 #	Book 06 necromancer 8787
+883	EQUIPMENT		0 #	Book 07 of arms 8788
+884	EQUIPMENT		0 #	Book 08 paladin 8786
+886	EQUIPMENT	0         # bracciali elfici id708
+887	EQUIPMENT		0 #	Quiver of Infinity #faretra gigante 11010
+888	EQUIPMENT		0 #	Dupres Shield #scudo a croce 11009
+889	EQUIPMENT	0	#Elf Male Hair 11
+890	EQUIPMENT	0	#More Hair elfici
+891	EQUIPMENT	0	#More Hair medio-lunghi
+892	EQUIPMENT	0	#More Hair con mezza coda
+893	EQUIPMENT	0	#More Hair 
+894	EQUIPMENT	0	#More Hair
+895	EQUIPMENT	0	#More Hair capelli dritti
+896	EQUIPMENT	0
+897	EQUIPMENT	0       #Reggiseno elfico id709
+898	EQUIPMENT	0  #tunica druidica id 12207
+899	EQUIPMENT	0  #tunica di seta id 12218
+900	EQUIPMENT	0 #capelli folti
+901	EQUIPMENT	0 #capelli rasati
+902	EQUIPMENT	0 #capelli a coda
+903	EQUIPMENT	0 #capelli rasati
+904	EQUIPMENT	0 #barba medio corta
+905	EQUIPMENT	0 #barba medio lunga
+906	EQUIPMENT	0 #baffi spioventi
+907	EQUIPMENT	0 
+908	EQUIPMENT	0
+909	EQUIPMENT	0 #Abito intero 8097
+910	EQUIPMENT	0 # maglia elfica
+911	EQUIPMENT	0  #Corpetto trapuntato 5979
+912	EQUIPMENT	0  #corpetto da giullare 8095
+913	EQUIPMENT	0  #corpetto 8059
+914	EQUIPMENT	0  #camicia con colletto
+915	EQUIPMENT	0 #camicia ricamata
+916	EQUIPMENT	0 #capelli lisci
+917	EQUIPMENT	0 #capelli ciuffo e piuma
+918	EQUIPMENT	0 #capelli corti lisci
+919	EQUIPMENT	0 #capelli lisci poco folti
+920	EQUIPMENT	0 #pantaloni con risvolto 12227
+921	EQUIPMENT	0 #Corpetto borchiato femminile lungo 7170
+922	EQUIPMENT	0 #Plate femminile 7172
+923	EQUIPMENT	0 #Busto femminile cuoio lungo 7174
+924	EQUIPMENT	0 #bustino cuoio femminile
+925	EQUIPMENT	0 #bustino borchiato 7180
+926	EQUIPMENT	0 #Gonnellino cuoi0 7178
+927	EQUIPMENT	0 # Gambali cuoio borchiato femminile 7168
+928	EQUIPMENT	0
+929	EQUIPMENT	0
+930	EQUIPMENT	0
+931	EQUIPMENT	0
+932	EQUIPMENT	0
+933	EQUIPMENT	0
+934	EQUIPMENT	0
+935	EQUIPMENT	0
+936	EQUIPMENT	0
+937	EQUIPMENT	0
+938	EQUIPMENT	0
+939	EQUIPMENT	0
+941	EQUIPMENT	0 #stivali da viaggio 12228
+942	EQUIPMENT	0 #piastre elfica 11111
+943	EQUIPMENT	0 #cintura nordica
+944	EQUIPMENT	0  # corpetto pregiato id757
+945	EQUIPMENT	0  # elven gplate gloves #anim guanti aperti id11114
+946	EQUIPMENT	0  #gambali di piastre elfica 11115
+947	EQUIPMENT	0  #braccia di piastre elfica 11116
+948	EQUIPMENT	0  #busto di piastre elfica
+949	EQUIPMENT	0
+950	EQUIPMENT	0
+951	EQUIPMENT	0
+952	EQUIPMENT	0
+953	EQUIPMENT	0
+954	EQUIPMENT	0
+955	EQUIPMENT	0
+956	EQUIPMENT	0
+957	EQUIPMENT	0
+958	EQUIPMENT	0
+959	EQUIPMENT	0
+960	EQUIPMENT	0
+961	EQUIPMENT	0  # Bone machete id526 (potenzialmente eliminabile)
+962	EQUIPMENT	0  #cerchietto 11118
+963	EQUIPMENT	0  #cerchietto reale 11119
+964	EQUIPMENT	0  #cerchietto gemmato 11120
+965	EQUIPMENT	0  #vulture helmet 11121 (buona anim)
+966	EQUIPMENT	0  #raven helmet 11122 (buona anim)
+967	EQUIPMENT	0  #winged helmet 11123 (buona anim)
+968	EQUIPMENT	0  #pelle elfica busto 12651
+969	EQUIPMENT	0  #pelle elfica guanti11125
+970     EQUIPMENT	0 #death shroud 8270
+971	EQUIPMENT	0 
+972	EQUIPMENT	0  #canna da pesca
+973	EQUIPMENT	0 #elmo orchescop 7947
+974	EQUIPMENT	0  # pantaloni pregiati id758
+975	EQUIPMENT	0  #Pelle elfica braccia 11127
+976	EQUIPMENT	0  #pelle elfica pantaloni 11128
+977	EQUIPMENT	0  #pelle elfica busto femminile 11129 
+978	EQUIPMENT	0 #busto armatura imbottita 12229
+979	EQUIPMENT	0 #guanti armatura imbottita12230
+980	EQUIPMENT	0 #bacchetta
+981	EQUIPMENT	0 #bacchetta
+982	EQUIPMENT	0 #bacchetta
+983	EQUIPMENT	0 #bacchetta
+984	EQUIPMENT	0 #grimorio
+985	EQUIPMENT	0 #grimorio sx
+986	EQUIPMENT	0 # Stivali pregiati id759
+987	HUMAN	0 #gmrobe 8271
+988	HUMAN	0
+989	EQUIPMENT	0 #bracciali armatura imbottita 12231
+990	HUMAN	0 #Barba lunga
+991	HUMAN	0 #barba lunga
+992	EQUIPMENT	0
+993	EQUIPMENT	0
+994	HUMAN	0 #barba lunga
+995	EQUIPMENT	0  #armatura imbottita pantaloni12232
+996	EQUIPMENT	0  #gonna a doppio velo 12233
+997	EQUIPMENT	0  #imbottita femminile 12234
+998	MONSTER	0
+999	MONSTER	0
+1025    EQUIPMENT 0 #DROW FACCIA 7360
+1026    EQUIPMENT 0 #ELFO FACCIA 7361
+1027    EQUIPMENT 0 #GNOMO FACCIA 7362
+1028    EQUIPMENT 0 #HALFLIN FACCIA 7363
+1029    EQUIPMENT 0 #MEZZELFO FACCIA 7364
+1030    EQUIPMENT 0 #MEZZORCO FACCIA 7365
+1031    EQUIPMENT 0 #NANO FACCIA 7366
+1032    EQUIPMENT 0       # fodero cinta id3902
+1033    EQUIPMENT0       #Occhiali
+1034    EQUIPMENT 0       # bouquet fiori 1
+1035    EQUIPMENT 0       # Bouquet fiori 2
+1036    EQUIPMENT 0       # Medaglione  id 5188
+1037    EQUIPMENT 0       # Medaglione  id 5189
+1038    EQUIPMENT 0       # Medaglione  id 5190
+1039    EQUIPMENT 0       # Medaglione  id 5191
+1040    EQUIPMENT 0       # Medaglione  id 5192 
+1041    EQUIPMENT 0       # Medaglione  id 5194
+1044    EQUIPMENT 0       #Simbolo sacro
+1045    EQUIPMENT 0       #Simbolo sacro
+1046    EQUIPMENT 0       #Simbolo sacro
+1047    EQUIPMENT 0       #Simbolo sacro
+1048    EQUIPMENT 0       #Simbolo sacro
+1049    EQUIPMENT 0       #Simbolo sacro
+1050    EQUIPMENT 0       #Simbolo sacro
+1051    EQUIPMENT 0       #Simbolo sacro
+1052    EQUIPMENT 0       #Simbolo sacro
+1053    EQUIPMENT 0       #Simbolo sacro
+1054    EQUIPMENT 0       #Simbolo sacro
+1055    EQUIPMENT 0       #Simbolo sacro
+1056    EQUIPMENT 0       #Simbolo sacro
+1057    EQUIPMENT 0       #Simbolo sacro
+1058    EQUIPMENT 0       #Simbolo sacro
+1059    EQUIPMENT 0       #Simbolo sacro
+1060    EQUIPMENT 0       #Simbolo sacro
+1061    EQUIPMENT 0       #Simbolo sacro
+1062    EQUIPMENT 0       #Simbolo sacro
+1063    EQUIPMENT 0       #Simbolo sacro
+1064    EQUIPMENT 0       #Simbolo sacro
+1065    EQUIPMENT 0       #Simbolo sacro
+1066    EQUIPMENT 0       #Simbolo sacro
+1067    EQUIPMENT 0       #Simbolo sacro
+1068    EQUIPMENT 0       #Simbolo sacro
+1069    EQUIPMENT 0       #Simbolo sacro
+1070    EQUIPMENT 0       #Simbolo sacro
+1071    EQUIPMENT 0       #Simbolo sacro
+1072    EQUIPMENT 0       #Simbolo sacro
+1073    EQUIPMENT 0       #Simbolo sacro
+1074    EQUIPMENT 0       #Simbolo sacro
+1075    EQUIPMENT 0       #Simbolo sacro
+1076    EQUIPMENT 0       #Simbolo sacro
+1077    EQUIPMENT 0       #Simbolo sacro  
+1078    EQUIPMENT 0       # Tamburo
+1081    EQUIPMENT	0 # Arpa
+1082	EQUIPMENT	0 # Arpa2
+1083	EQUIPMENT	0 # Liuto
+1084    EQUIPMENT       0 #Flauto 10247
+1089	EQUIPMENT	0 # Frusta 5742
+1090    EQUIPMENT	0 #skin lich solo teschio 8470
+1091    EQUIPMENT	0 #skin lich 8469
+1094    EQUIPMENT       0 # cintura di pelle  15375
+1095    EQUIPMENT       0 # cintura di pelle -stretta- 15374
+1096    EQUIPMENT       0 # cintura di pelle -larga- 15373
+1097    EQUIPMENT       0 # cintura di pelle -decorata- 15372
+1098    EQUIPMENT       0 # Cintura larga 15371
+1099    EQUIPMENT       0 # Cintura pendente 15370
+1127    EQUIPMENT       0 #Scopa 14740
+1132    EQUIPMENT       0 # Chakram (tamburello)id 1005 not impl
+1133    EQUIPMENT       0 # occhiali
+1137    EQUIPMENT       0 # Fionda id 1140 not impl
+1138    EQUIPMENT       0 # Frusta mancina (not impl id 1153
+1139    EQUIPMENT       0 # Katar id 1325 not impl
+1140    EQUIPMENT       0 # Katar id 1326 not impl
+1141    EQUIPMENT       0 # Tridente (not impl id 1160
+1145    EQUIPMENT       0 # Manganello id3563 not impl
+1146    EQUIPMENT       0 # Manganello mancina id3564 not impl
+1176	EQUIPMENT	0 # collana perline 4229
+1177	EQUIPMENT	0 # braccialetto normale 4230
+1178	EQUIPMENT	0 # orecchini rotondi 4231
+1179	EQUIPMENT	0 # collana gemma 4232
+1180	EQUIPMENT	0 # collana catenina 4233
+1181	EQUIPMENT	0 # anello seemplice 4234
+1182	EQUIPMENT	0 # collana grigio 7944
+1183    EQUIPMENT       0 #collana berad grigio 7946
+1184	EQUIPMENT	0 # braccialetto grigio 7942
+1185	EQUIPMENT	0 # orecchino grigio 7943
+1234    EQUIPLENT       0 # Pietra fluttuante 4246
+1235    EQUIPLENT       0 # Pietra fluttuante 12120
+1236    EQUIPLENT       0 # Pietra fluttuante 12121
+1237    EQUIPLENT       0 # Pietra fluttuante 12122
+1238    EQUIPLENT       0 # Pietra fluttuante 12123
+1268	EQUIPMENT	0 
+1272	EQUIPMENT	0 #Collana con conchiglia
+1281	EQUIPMENT	0
+1283	EQUIPMENT	0
+1300    EQUIPMENT	0 # turbante
+1301    EQUIPMENT	0 # velo desertico
+1302    EQUIPMENT	0 # tunica calishita
+1303    EQUIPMENT	0 # copricapo sciamanico 6493
+1304    EQUIPMENT	0 # Mantello di pelliccia 8559
+1305    EQUIPMENT	0 # Giacca lunga 8557
+1306    EQUIPMENT	0 # Poncho di lana 8556
+1307    EQUIPMENT	0 # Scialle corto 8558
+1308    EQUIPMENT	0 # Busto cinghiato 8555
+1309    EQUIPMENT	0 # Maglia a spallina singola 8554
+1325	EQUIPMENT	0
+1349	EQUIPMENT	0
+1404	EQUIPMENT	0
+1405	EQUIPMENT	0
+1406	EQUIPMENT	0
+1407	EQUIPMENT	0
+1408	EQUIPMENT	0
+1409	EQUIPMENT	0
+1410	EQUIPMENT	0
+1411	EQUIPMENT	0
+1412	EQUIPMENT	0
+1413	EQUIPMENT	0
+1414	EQUIPMENT	0
+1415	EQUIPMENT	0
+1416	EQUIPMENT	0
+1417	EQUIPMENT	0
+1418	EQUIPMENT	0
+1419	EQUIPMENT	0
+1430	EQUIPMENT	0
+1431	EQUIPMENT	0
+1434	EQUIPMENT	0
+1435	EQUIPMENT	0
+1447	EQUIPMENT	0
+1448	EQUIPMENT	0
+1449	EQUIPMENT	0
+1455	EQUIPMENT	0
+1465	EQUIPMENT	0
+1466	EQUIPMENT	0
+1468	EQUIPMENT	0
+1469	EQUIPMENT	0
+1476	EQUIPMENT	0
+1477	EQUIPMENT	0
+1479	EQUIPMENT	0
+1480	EQUIPMENT	0
+1481	EQUIPMENT	0
+1482	EQUIPMENT	0
+1483	EQUIPMENT	0
+1484	EQUIPMENT	0
+1485	EQUIPMENT	0
+1486	EQUIPMENT	0
+1490	EQUIPMENT	0
+1492	EQUIPMENT	0
+1521	EQUIPMENT	0
+1523	EQUIPMENT	0
+1525	EQUIPMENT	0
+1527	EQUIPMENT	0
+1528	EQUIPMENT	0
+1529	EQUIPMENT	0
+1530	EQUIPMENT	0
+1531	EQUIPMENT	0
+1538	EQUIPMENT	0
+1540	EQUIPMENT	0
+1542	EQUIPMENT	0
+1543	EQUIPMENT	0
+1544	EQUIPMENT	0
+1545	EQUIPMENT	0
+1546	EQUIPMENT	0
+1548	EQUIPMENT	0
+1549	EQUIPMENT	0
+1550	EQUIPMENT	0
+1554	EQUIPMENT	0
+1555	EQUIPMENT	0
+1556	EQUIPMENT	0
+1557	EQUIPMENT	0
+1560	EQUIPMENT	0
+1561	EQUIPMENT	0
+1562	EQUIPMENT	0
+1563	EQUIPMENT	0
+1564	EQUIPMENT	0
+1565	EQUIPMENT	0
+1566	EQUIPMENT	0
+1672	EQUIPMENT	0
+1674	EQUIPMENT	0
+1675	EQUIPMENT	0
+1676	EQUIPMENT	0
+1677	EQUIPMENT	0
+1678	EQUIPMENT	0
+1679	EQUIPMENT	0
+1680	EQUIPMENT	0
+1681	EQUIPMENT	0
+1682	EQUIPMENT	0
+1683	EQUIPMENT	0
+1684	EQUIPMENT	0
+1685	EQUIPMENT	0
+1686	EQUIPMENT	0
+1687	EQUIPMENT	0
+1688	EQUIPMENT	0
+1690	EQUIPMENT	0
+1691	EQUIPMENT	0
+1692	EQUIPMENT	0
+1693	EQUIPMENT	0
+1694	EQUIPMENT	0
+1695	EQUIPMENT	0
+1696	EQUIPMENT	0
+1697	EQUIPMENT	0
+1698	EQUIPMENT	0
+1699	EQUIPMENT	0
+1700	EQUIPMENT	0
+1701	EQUIPMENT	0
+1702	EQUIPMENT	0
+1703	EQUIPMENT	0
+1710	EQUIPMENT	0
+1712	EQUIPMENT	0
+1713	EQUIPMENT	0
+1715	EQUIPMENT	0
+1716	EQUIPMENT	0
+1720	EQUIPMENT	0
+1721	EQUIPMENT	0
+1722	EQUIPMENT	0
+1723	EQUIPMENT	0
+1724	EQUIPMENT	0
+1725	EQUIPMENT	0
+1726	EQUIPMENT	0
+1727	EQUIPMENT	0
+1728	EQUIPMENT	0
+1729	EQUIPMENT	0
+1730	EQUIPMENT	0
+1731	EQUIPMENT	0
+1732	EQUIPMENT	0
+1733	EQUIPMENT	0
+1734	EQUIPMENT	0
+1735	EQUIPMENT	0
+1736	EQUIPMENT	0
+1740	EQUIPMENT	0
+1742	EQUIPMENT	0
+1743	EQUIPMENT	0
+1759	EQUIPMENT	0
+1761	EQUIPMENT	0
+1762	EQUIPMENT	0
+1801    MONSTER 	0  #lemure
+1802    MONSTER 	0 # paraghiaccio
+1803    MONSTER 	0 # elem fuoco piccolo
+1804    MONSTER 	0 # elem fuoco medio/grande
+1805    MONSTER 	0 # elem aria medio/grande/fumo
+1806    MONSTER 	0 # elem terra piccolo
+1807    MONSTER 	0 # elem terra medio grande
+1808    MONSTER 	0 # elem aria/fumo piccolo 
+1809    MONSTER 	0 # fihyr maggiore
+1810    MONSTER 	0 # fihyr piccolo
+1900	HUMAN	0
+1901	EQUIPMENT	0
+1902	EQUIPMENT	0
+1903	EQUIPMENT	0
+1909	EQUIPMENT	0
+1910	EQUIPMENT	0
+1911	EQUIPMENT	0
+1912	EQUIPMENT	0
+1913	EQUIPMENT	0
+1921	EQUIPMENT	0
+1922	EQUIPMENT	0
+1923	EQUIPMENT	0
+1924	EQUIPMENT	0
+1925	EQUIPMENT	0
+1926	EQUIPMENT	0
+1927	EQUIPMENT	0
+1928	EQUIPMENT	0
+1929	EQUIPMENT	0
+1971	EQUIPMENT	0
+1973	EQUIPMENT	0
