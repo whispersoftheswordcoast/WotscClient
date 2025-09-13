@@ -1,0 +1,6 @@
+Se non dovesse funzionare, potrebbe mancare il requisito Visual C++, scaricabile al link sottostante
+
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+Il programma dovrebbe mantenere i settings, ma se voleste escludere altri file dall'update, basta mettere il nome degli stessi in exclude.ini.
+Se doveste voler forzare il redownload della release, cancellate il file lastversion.txt
