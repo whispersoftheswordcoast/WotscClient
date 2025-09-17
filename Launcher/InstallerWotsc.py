@@ -257,7 +257,7 @@ class WOTSCDownloader:
                     rel = os.path.relpath(full, tmp_extract_dir)
                     dest_full = os.path.join(folder, rel)
 
-                    if f.lower() in self.exclude_list:
+                    if f.lower() in self.exclude_list and os.path.exists(dest_full):
                         continue
 
                     os.makedirs(os.path.dirname(dest_full), exist_ok=True)
