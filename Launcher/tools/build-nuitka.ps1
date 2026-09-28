@@ -117,8 +117,7 @@ NOTE
 - Serve .NET 10 per avviare wotsc.exe: se manca, il launcher te lo segnala.
 - Richiede connessione per controllare gli aggiornamenti su GitHub.
 - Flag OpenGL in basso a sinistra: forza il renderer OpenGL (force_driver),
-  consigliato sulle GPU datate; il launcher lo propone da solo al primo
-  avvio se rileva una scheda debole (scelta ricordata in config.ini).
+  consigliato sulle GPU datate (su hardware vetusto, impostala a mano).
 "@
 $Leggimi | Out-File -FilePath (Join-Path $Stage "Leggimi.txt") -Encoding utf8
 

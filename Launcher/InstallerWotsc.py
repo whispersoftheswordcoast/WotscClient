@@ -5,10 +5,8 @@ import requests
 import os
 import tempfile
 import configparser
-import ctypes
 import json
 import py7zr
-import re
 import shutil
 import subprocess
 import sys
@@ -47,100 +45,6 @@ ICON_FILE = _asset_path("icona.ico")
 RELEASE_CACHE_TTL = 900  # riusa releases/latest per 15 minuti (Gioca + Aggiorna)
 RELEASE_CACHE_FILE = os.path.join(BASE_DIR, "last_release_cache.json")
 RELEASE_RETRY_BACKOFF = 300  # dopo un errore, max 1 retry API ogni 5 minuti
-
-# --- GPU datate: pattern sui nomi (dopo pulizia) + check Vulkan via ctypes ---
-# NVIDIA: nessun pattern, tutto il pre-Kepler (lato debole) non ha Vulkan
-# ed e' coperto dal check capacita'; da Kepler in su i driver D3D11 vanno bene.
-WEAK_GPU_PATTERNS = (
-    r"\ba(4|6|8|9|10|12)\s+\d",   # APU AMD A4/A6/A8/A9/A10/A12 (es. A6 6310)
-    r"\be[12]\s+\d{3,4}",          # AMD E1/E2
-    r"\bathlon\s+5\d{3}\b",        # Athlon AM1 (5150/5350/5370)
-    r"\br[2-7]\s+graphics\b",      # Radeon R2-R7 integrate (non le discrete R7/R9 xxx)
-    r"\bhd\s+[1-5]\d{3}",          # Radeon HD 1xxx-5xxx
-    r"\bhd\s+6\d{3}",              # Radeon HD 6xxx (TeraScale)
-    r"\bhd\s+7[0-6]\d{2}",         # Radeon HD 74xx-7670 (rebrand TeraScale)
-    r"\bhd\s+graphics\s+(2000|2500|3000|4000)\b",  # Intel HD vecchie
-    r"\bgma\b|media accelerator",  # Intel GMA
-)
-_SOFTWARE_RENDERERS = ("llvmpipe", "lavapipe", "swiftshader", "basic render",
-                       "gfxstream", "dojostat")
-VK_API_VERSION_1_0 = (1 << 22)
-
-class _VkApplicationInfo(ctypes.Structure):
-    _fields_ = [("sType", ctypes.c_uint32), ("pNext", ctypes.c_void_p),
-                ("pApplicationName", ctypes.c_char_p), ("applicationVersion", ctypes.c_uint32),
-                ("pEngineName", ctypes.c_char_p), ("engineVersion", ctypes.c_uint32),
-                ("apiVersion", ctypes.c_uint32)]
-
-class _VkInstanceCreateInfo(ctypes.Structure):
-    _fields_ = [("sType", ctypes.c_uint32), ("pNext", ctypes.c_void_p),
-                ("flags", ctypes.c_uint32), ("pApplicationInfo", ctypes.c_void_p),
-                ("enabledLayerCount", ctypes.c_uint32), ("ppEnabledLayerNames", ctypes.c_void_p),
-                ("enabledExtensionCount", ctypes.c_uint32), ("ppEnabledExtensionNames", ctypes.c_void_p)]
-
-def get_gpu_names():
-    # Nomi GPU via CIM (wmic e' deprecato). [] se non rilevabile: mai bloccare.
-    try:
-        r = subprocess.run(
-            ["powershell", "-NoProfile", "-Command",
-             "Get-CimInstance Win32_VideoController | Select-Object -ExpandProperty Name"],
-            capture_output=True, text=True, timeout=30,
-            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
-        if r.returncode == 0:
-            return [l.strip() for l in r.stdout.splitlines() if l.strip()]
-    except Exception:
-        pass
-    return []
-
-def gpu_name_is_weak(name):
-    clean = re.sub(r"[^a-z0-9 ]", " ", (name or "").lower())
-    clean = re.sub(r"\s+", " ", clean)
-    return any(re.search(p, clean) for p in WEAK_GPU_PATTERNS)
-
-def has_full_vulkan():
-    # True se almeno una GPU hardware espone Vulkan 1.0+. Solo ctypes.
-    try:
-        vk = ctypes.WinDLL("vulkan-1.dll")
-    except Exception:
-        return False
-    instance = ctypes.c_void_p(None)
-    try:
-        app = _VkApplicationInfo(0, None, b"WOTSCLauncher", 1, None, 0, VK_API_VERSION_1_0)
-        ci = _VkInstanceCreateInfo(14, None, 0, ctypes.addressof(app), 0, None, 0, None)
-        vk.vkCreateInstance.restype = ctypes.c_uint32
-        vk.vkCreateInstance.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.POINTER(ctypes.c_void_p)]
-        if vk.vkCreateInstance(ctypes.byref(ci), None, ctypes.byref(instance)) != 0 or not instance.value:
-            return False
-        try:
-            vk.vkEnumeratePhysicalDevices.restype = ctypes.c_uint32
-            count = ctypes.c_uint32(0)
-            if vk.vkEnumeratePhysicalDevices(instance, ctypes.byref(count), None) != 0 or count.value == 0:
-                return False
-            n = min(count.value, 16)
-            devs = (ctypes.c_void_p * n)()
-            cnt = ctypes.c_uint32(n)
-            if vk.vkEnumeratePhysicalDevices(instance, ctypes.byref(cnt), devs) != 0:
-                return False
-            vk.vkGetPhysicalDeviceProperties.argtypes = [ctypes.c_void_p, ctypes.c_void_p]
-            for i in range(cnt.value):
-                buf = ctypes.create_string_buffer(512)
-                vk.vkGetPhysicalDeviceProperties(devs[i], buf)
-                raw = buf.raw
-                api = int.from_bytes(raw[0:4], "little")
-                dtype = int.from_bytes(raw[16:20], "little")  # 4 = CPU
-                name = raw[20:276].split(b"\x00")[0].decode("utf-8", "replace").lower()
-                if (api >= VK_API_VERSION_1_0 and dtype != 4
-                        and not any(s in name for s in _SOFTWARE_RENDERERS)):
-                    return True
-            return False
-        finally:
-            try:
-                vk.vkDestroyInstance.argtypes = [ctypes.c_void_p, ctypes.c_void_p]
-                vk.vkDestroyInstance(instance, None)
-            except Exception:
-                pass
-    except Exception:
-        return False
 
 def load_exclude_list():
     cfg = configparser.ConfigParser()
@@ -532,79 +436,11 @@ class WOTSCDownloader:
             return
         want = bool(self.opengl_var.get())
         if self.write_force_driver(folder, want):
-            names = get_gpu_names()
-            self._remember_gpu_choice(names[0] if names else "", want)
             self.safe_status("OpenGL attivato (force_driver=1)" if want
                              else "DirectX ripristinato (force_driver=0)")
         else:
             self.refresh_opengl_flag()
             self.safe_status("settings.json illeggibile, modifica non applicata")
-
-    def _remember_gpu_choice(self, gpu_name, use_opengl):
-        try:
-            cfg = configparser.ConfigParser()
-            if os.path.exists(CONFIG_FILE):
-                cfg.read(CONFIG_FILE)
-            if "Settings" not in cfg:
-                cfg["Settings"] = {}
-            cfg["Settings"]["gpu_name"] = gpu_name or ""
-            cfg["Settings"]["gpu_opengl"] = "1" if use_opengl else "0"
-            with open(CONFIG_FILE, "w") as f:
-                cfg.write(f)
-        except Exception:
-            pass
-
-    def read_gpu_choice(self):
-        # (nome ricordato o None, True/False/None se mai scelto)
-        try:
-            cfg = configparser.ConfigParser()
-            if os.path.exists(CONFIG_FILE):
-                cfg.read(CONFIG_FILE)
-                name = cfg.get("Settings", "gpu_name", fallback="") or None
-                if cfg.has_option("Settings", "gpu_opengl"):
-                    return name, cfg.getboolean("Settings", "gpu_opengl")
-        except Exception:
-            pass
-        return None, None
-
-    def detect_weak_gpu(self):
-        # (debole?, nome). Nomi noti OR niente Vulkan hardware.
-        names = get_gpu_names()
-        if not names:
-            return False, ""
-        for n in names:
-            if gpu_name_is_weak(n):
-                return True, n
-        if not has_full_vulkan():
-            return True, names[0]
-        return False, names[0]
-
-    def _gpu_check_and_launch(self, folder, note=None):
-        if self.test_flag("force_weak_gpu"):
-            weak, gpu = True, "TEST GPU (force_weak_gpu)"
-        else:
-            weak, gpu = self.detect_weak_gpu()
-        if weak and gpu:
-            remembered, _choice = self.read_gpu_choice()
-            if remembered != gpu:
-                self.root.after(0, lambda: self._ask_gpu(folder, gpu, note))
-                return
-        self.root.after(0, lambda: self._do_launch(folder, note=note))
-
-    def _ask_gpu(self, folder, gpu, note=None):
-        usa = ask_styled(
-            self.root, "GPU datata",
-            f"Rilevata scheda video datata:\n{gpu}\n\n"
-            "ClassicUO su queste schede gira meglio in OpenGL.\n\n"
-            "Usare OpenGL d'ora in poi?\n(Sì = applica e ricorda, No = resta DirectX)")
-        self._remember_gpu_choice(gpu, usa)
-        if usa:
-            if self.write_force_driver(folder, True):
-                self.safe_status("OpenGL attivato (force_driver=1)")
-            else:
-                self.safe_status("settings.json illeggibile, OpenGL non applicato")
-        self.refresh_opengl_flag()
-        self._do_launch(folder, note=note)
 
     def safe_status(self, txt):
         self.current_status_base = txt
@@ -1026,7 +862,7 @@ class WOTSCDownloader:
         except Exception:
             latest = None
         if not latest:
-            self._gpu_check_and_launch(folder, note="Verifica versione fallita, avvio comunque")
+            self.root.after(0, lambda: self._do_launch(folder, note="Verifica versione fallita, avvio comunque"))
             return
 
         latest_tag = latest.get("tag_name")
@@ -1035,7 +871,7 @@ class WOTSCDownloader:
         if outdated:
             self.root.after(0, lambda: self._ask_outdated(folder, latest_tag, last_known))
         else:
-            self._gpu_check_and_launch(folder)
+            self.root.after(0, lambda: self._do_launch(folder))
 
     def _ask_outdated(self, folder, latest_tag, last_known):
         known_txt = last_known if last_known else "sconosciuta"
@@ -1046,9 +882,7 @@ class WOTSCDownloader:
         if aggiorna:
             self.start_download()
         else:
-            # Rilevazione GPU locale: thread a parte per non freezare la GUI.
-            threading.Thread(target=self._gpu_check_and_launch, args=(folder,),
-                             daemon=True).start()
+            self._do_launch(folder)
 
     def _do_launch(self, folder, note=None):
         if note:
