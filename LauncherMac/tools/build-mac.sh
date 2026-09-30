@@ -4,7 +4,14 @@
 # NOTA: PyInstaller non cross-compila: eseguire SOLO su Mac.
 set -euo pipefail
 VERSION="${1:-1.0.0}"
-ARCH="${2:-universal2}"
+# Di default build nativa (universal2 richiede interprete universal2, altrimenti
+# PyInstaller fallisce: passa arm64/x86_64/universal2 espliciti se serve).
+case "$(uname -m)" in
+  arm64)  NATIVE_ARCH="arm64" ;;
+  x86_64) NATIVE_ARCH="x86_64" ;;
+  *)      NATIVE_ARCH="universal2" ;;
+esac
+ARCH="${2:-$NATIVE_ARCH}"
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"

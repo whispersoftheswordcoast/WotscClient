@@ -39,15 +39,39 @@ jobs:
       - run: python -m pytest LauncherMac/tests/ -v
       - working-directory: LauncherMac
         run: |
+          # NOTA: niente --target-arch (l'interprete setup-python e' nativo
+          # single-arch; universal2 qui fallirebbe la build).
           python -m PyInstaller --noconfirm --windowed \
-            --name WOTSCLauncherMac --target-arch universal2 \
+            --name WOTSCLauncherMac \
             --osx-bundle-identifier coast.sword.wotsc-launcher-mac \
             --add-data "background.jpg:assets" \
             --add-data "exclude.ini:." \
             --add-data "mac-ignore.ini:." \
             InstallerWotscMac.py
       - run: codesign --deep --force -s - "LauncherMac/dist/WOTSCLauncherMac.app" || true
+      - working-directory: LauncherMac/dist
+        run: |
+          cat > Leggimi-mac.txt <<'EOF'
+          WOTSC Launcher Mac - Whispers of the Sword Coast (beta per tester)
+          =================================================================
+
+          1. Estrai lo zip dove vuoi.
+          2. Primo avvio: right-click su WOTSCLauncherMac -> Apri (l'app non e'
+             firmata da Apple: servono Apri comunque / right-click).
+          3. Premi Sfoglia e scegli una cartella di prova (NON il client vero
+             se ne hai uno: e' una beta).
+          4. Premi Forza aggiornamento: scarica la base .7z dalla release
+             GitHub e poi l'overlay Mac (WOTSC.client-mac.zip).
+          5. Premi GIOCA!
+
+          Problemi? Dal launcher usa Copia diagnostica (o il file di log) e
+          invia il testo a chi sviluppa, con: modello Mac, versione macOS,
+          cosa stavi facendo e l'errore visto a video.
+          EOF
+          rm -f "WOTSCLauncherMac-${{ matrix.arch }}.zip"
+          ditto -c -k --sequesterRsrc --keepParent WOTSCLauncherMac.app Leggimi-mac.txt "WOTSCLauncherMac-${{ matrix.arch }}.zip"
+          unzip -l "WOTSCLauncherMac-${{ matrix.arch }}.zip" | head -8
       - uses: actions/upload-artifact@v4
         with:
           name: WOTSCLauncherMac-${{ matrix.arch }}
-          path: LauncherMac/dist/WOTSCLauncherMac.app
+          path: LauncherMac/dist/WOTSCLauncherMac-${{ matrix.arch }}.zip
