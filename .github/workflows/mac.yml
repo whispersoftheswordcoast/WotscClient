@@ -70,7 +70,7 @@ jobs:
           EOF
           rm -f "WOTSCLauncherMac-${{ matrix.arch }}.zip"
           ditto -c -k --sequesterRsrc --keepParent WOTSCLauncherMac.app Leggimi-mac.txt "WOTSCLauncherMac-${{ matrix.arch }}.zip"
-          unzip -l "WOTSCLauncherMac-${{ matrix.arch }}.zip" | head -8
+          ls -la "WOTSCLauncherMac-${{ matrix.arch }}.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: WOTSCLauncherMac-${{ matrix.arch }}
