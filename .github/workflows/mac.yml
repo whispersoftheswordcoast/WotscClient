@@ -48,26 +48,28 @@ jobs:
             --add-data "exclude.ini:." \
             --add-data "mac-ignore.ini:." \
             InstallerWotscMac.py
-      - run: codesign --deep --force -s - "LauncherMac/dist/WOTSCLauncherMac.app" || true
-      - working-directory: LauncherMac/dist
+      - run: codesign --deep --force -s - "LauncherMac/dist/WOTSCLauncherMac.app"
+      - name: Contenuto dist
+        working-directory: LauncherMac/dist
+        run: ls -la
+      - name: Leggimi player
+        working-directory: LauncherMac/dist
         run: |
-          cat > Leggimi-mac.txt <<'EOF'
-          WOTSC Launcher Mac - Whispers of the Sword Coast (beta per tester)
-          =================================================================
-
-          1. Estrai lo zip dove vuoi.
-          2. Primo avvio: right-click su WOTSCLauncherMac -> Apri (l'app non e'
-             firmata da Apple: servono Apri comunque / right-click).
-          3. Premi Sfoglia e scegli una cartella di prova (NON il client vero
-             se ne hai uno: e' una beta).
-          4. Premi Forza aggiornamento: scarica la base .7z dalla release
-             GitHub e poi l'overlay Mac (WOTSC.client-mac.zip).
-          5. Premi GIOCA!
-
-          Problemi? Dal launcher usa Copia diagnostica (o il file di log) e
-          invia il testo a chi sviluppa, con: modello Mac, versione macOS,
-          cosa stavi facendo e l'errore visto a video.
-          EOF
+          printf '%s\n' \
+            "WOTSC Launcher Mac - Whispers of the Sword Coast (beta per tester)" \
+            "=================================================================" \
+            "" \
+            "1. Estrai lo zip dove vuoi." \
+            "2. Primo avvio: right-click su WOTSCLauncherMac -> Apri." \
+            "3. Premi Sfoglia e scegli una cartella di prova." \
+            "4. Premi Forza aggiornamento, poi GIOCA!" \
+            "" \
+            "Problemi? Invia diagnostica e avvio.log a chi sviluppa." \
+            > Leggimi-mac.txt
+          ls -la Leggimi-mac.txt
+      - name: Zip con ditto
+        working-directory: LauncherMac/dist
+        run: |
           rm -f "WOTSCLauncherMac-${{ matrix.arch }}.zip"
           ditto -c -k --sequesterRsrc --keepParent WOTSCLauncherMac.app Leggimi-mac.txt "WOTSCLauncherMac-${{ matrix.arch }}.zip"
           ls -la "WOTSCLauncherMac-${{ matrix.arch }}.zip"
