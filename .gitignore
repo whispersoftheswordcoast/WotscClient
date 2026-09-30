@@ -1,0 +1,33 @@
+# venv
+.venv/
+venv/
+ENV/
+
+# python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller nuovi build (senza toccare WOTSCLauncher già tracciato)
+dist/
+build/
+*.spec
+
+# Nuitka prova (output locale, come dist/)
+Provanuitka/
+*.build/
+
+# runtime locali del launcher InstallerWotsc.py:24-26
+config.ini
+last_release.txt
+last_release_cache.json
+
+# LauncherMac: zip locali (mai committare, vedi README-mac.md)
+LauncherMac/*.zip
+LauncherMac/dist-overlay/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
