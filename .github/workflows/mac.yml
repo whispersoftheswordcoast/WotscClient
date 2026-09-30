@@ -35,8 +35,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install -q pyinstaller requests pillow customtkinter pytest
+      - run: python -m pip install -q pyinstaller requests pillow customtkinter py7zr pytest
       - run: python -m pytest LauncherMac/tests/ -v
+      - working-directory: LauncherMac
+        run: python -c "import InstallerWotscMac; print('import GUI ok')"
       - working-directory: LauncherMac
         run: |
           # NOTA: niente --target-arch (l'interprete setup-python e' nativo
