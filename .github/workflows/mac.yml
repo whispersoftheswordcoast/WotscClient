@@ -71,8 +71,8 @@ jobs:
         working-directory: LauncherMac/dist
         run: |
           rm -f "WOTSCLauncherMac-${{ matrix.arch }}.zip"
-          ditto -c -k --sequesterRsrc --keepParent WOTSCLauncherMac.app Leggimi-mac.txt "WOTSCLauncherMac-${{ matrix.arch }}.zip"
-          ls -la "WOTSCLauncherMac-${{ matrix.arch }}.zip"
+          /usr/bin/zip -qry "WOTSCLauncherMac-${{ matrix.arch }}.zip" WOTSCLauncherMac.app Leggimi-mac.txt
+          python3 -c "import zipfile; z=zipfile.ZipFile('WOTSCLauncherMac-${{ matrix.arch }}.zip'); print('voci:', len(z.namelist())); assert z.testzip() is None; print('zip integro')"
       - uses: actions/upload-artifact@v4
         with:
           name: WOTSCLauncherMac-${{ matrix.arch }}
