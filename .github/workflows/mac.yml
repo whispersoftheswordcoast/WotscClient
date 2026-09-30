@@ -61,6 +61,9 @@ jobs:
           cat "$LOG"
           if grep -qi "traceback" "$LOG"; then
             echo "SMOKE FALLITO: traceback all'avvio"
+            TAIL=$(tail -c 6000 "$LOG" || true)
+            ESC=$(printf '%s' "$TAIL" | python3 -c "import sys; d=sys.stdin.read(); print(d.replace('%','%25').replace('\r','%0D').replace('\n','%0A'))")
+            echo "::error::Smoke traceback: $ESC"
             exit 1
           fi
           echo "smoke ok: nessun traceback in 20s"
