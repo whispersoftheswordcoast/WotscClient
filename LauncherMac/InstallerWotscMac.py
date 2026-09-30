@@ -1213,7 +1213,44 @@ class WOTSCDownloader:
         except Exception as e:
             info_styled(self.root, "Errore", f"Impossibile lanciare WOTSC: {e}")
 
+def _report_startup_crash(err_text):
+    # L'app e' windowed: senza questo, un'eccezione all'avvio chiude l'icona
+    # in un secondo senza lasciare traccia visibile. Si scrive sempre un log
+    # accanto all'app e si mostra un dialogo (Tk, fallback osascript).
+    import datetime
+    log_path = os.path.join(BASE_DIR, "launcher-crash.log")
+    try:
+        with open(log_path, "a", encoding="utf-8") as fh:
+            fh.write(f"\n===== {datetime.datetime.now():%Y-%m-%d %H:%M:%S} =====\n{err_text}\n")
+    except Exception:
+        pass
+    short = err_text[-900:] if len(err_text) > 900 else err_text
+    try:
+        import tkinter.messagebox as _mb
+        _r = ctk.CTk()
+        _r.withdraw()
+        _mb.showerror("WOTSC Launcher (Mac)",
+                      f"Avvio fallito. Invia questo file a chi sviluppa:\n{log_path}\n\n{short}")
+        try:
+            _r.destroy()
+        except Exception:
+            pass
+    except Exception:
+        try:
+            msg = ("WOTSC Launcher: avvio fallito. Vedi " + log_path).replace('"', "'")
+            subprocess.run(["/usr/bin/osascript", "-e",
+                            f'display alert "WOTSC Launcher" message "{msg}"'],
+                           timeout=15)
+        except Exception:
+            pass
+    return log_path
+
 if __name__ == "__main__":
-    root = ctk.CTk()
-    app = WOTSCDownloader(root)
-    root.mainloop()
+    import traceback
+    try:
+        root = ctk.CTk()
+        app = WOTSCDownloader(root)
+        root.mainloop()
+    except Exception:
+        _report_startup_crash(traceback.format_exc())
+        raise SystemExit(1)

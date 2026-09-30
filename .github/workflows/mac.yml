@@ -49,6 +49,21 @@ jobs:
             --add-data "mac-ignore.ini:." \
             InstallerWotscMac.py
       - run: codesign --deep --force -s - "LauncherMac/dist/WOTSCLauncherMac.app"
+      - name: Smoke avvio (20s, fail su Traceback)
+        run: |
+          BIN="LauncherMac/dist/WOTSCLauncherMac.app/Contents/MacOS/WOTSCLauncherMac"
+          LOG="$RUNNER_TEMP/smoke.log"
+          "$BIN" > "$LOG" 2>&1 &
+          PID=$!
+          sleep 20
+          kill "$PID" 2>/dev/null || true
+          wait "$PID" 2>/dev/null || true
+          cat "$LOG"
+          if grep -qi "traceback" "$LOG"; then
+            echo "SMOKE FALLITO: traceback all'avvio"
+            exit 1
+          fi
+          echo "smoke ok: nessun traceback in 20s"
       - name: Contenuto dist
         working-directory: LauncherMac/dist
         run: ls -la
@@ -65,6 +80,10 @@ jobs:
             "4. Premi Forza aggiornamento, poi GIOCA!" \
             "" \
             "Problemi? Invia diagnostica e avvio.log a chi sviluppa." \
+            "Se l'icona si apre e si chiude subito, apri Terminale e incolla:" \
+            "  /percorso/WOTSCLauncherMac.app/Contents/MacOS/WOTSCLauncherMac" \
+            "poi invia tutto l'output (oppure il file launcher-crash.log" \
+            "nato accanto all'app)." \
             > Leggimi-mac.txt
           ls -la Leggimi-mac.txt
       - name: Zip con ditto
